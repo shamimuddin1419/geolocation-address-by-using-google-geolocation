@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SalesTrackingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SalesTrackingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="crm_DailySalesTask" EntityType="SalesTrackingModel.crm_DailySalesTask" />
+  </EntityContainer>
+  <EntityType Name="crm_DailySalesTask">
+    <Key>
+      <PropertyRef Name="DailySalesTaskID" />
+    </Key>
+    <Property Name="DailySalesTaskID" Type="Int64" Nullable="false" />
+    <Property Name="UserID" Type="Int64" />
+    <Property Name="BuyerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Achivement" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>
